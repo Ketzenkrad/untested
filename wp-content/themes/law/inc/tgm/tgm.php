@@ -58,14 +58,11 @@ function law_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
-
-		// This is an example of how to include a plugin from the WordPress Plugin Repository.
 		array(
 			'name'      => 'Unyson',
 			'slug'      => 'unyson',
 			'required'  => false,
 		),
-
 	);
 
 	/*
