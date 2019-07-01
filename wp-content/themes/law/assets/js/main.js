@@ -9,6 +9,36 @@
 
     //$('#fh5co-counter > .fw-container > .fw-row > div').addClass('animate-box');
 
+    // AJAX
+    $('.fw_form_fw_form').on('submit', function() {
+        var $this = $(this),
+            btn = $this.find('button'),
+            data = $this.serialize(),
+            formAlert = $('.form-alert'),
+            loader = '<img class="loader" src="' + lawData.themePath + '/assets/images/loader.gif">';
+
+        $.ajax({
+            type: 'POST',
+            data: data,
+            beforeSend: function() {
+                btn.attr('disabled', true);
+                formAlert.removeClass('alert-success alert-danger').empty();
+                btn.after(loader);
+            },
+            success: function(responce) {
+                formAlert.fadeIn(300, function() {
+                    console.log(responce);
+                });
+            },
+            error: function() {
+                alert('Error!');
+            }
+        });
+
+        return false;
+
+    });
+
     var isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
