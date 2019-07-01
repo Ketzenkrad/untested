@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+#fh5co-consult>.fw-container-fluid {
+    padding: 0;
+}
+
 #fh5co-content .choose {
     padding: 15px 40px 0;
 }
@@ -104,4 +108,22 @@
     border-radius: 30px;
     font-weight: 400;
     font-size: 16px;
+}
+
+.fw_form_fw_form .field-text input:active,
+.fw_form_fw_form .field-text input:focus,
+.fw_form_fw_form .field-textarea textarea:active,
+.fw_form_fw_form .field-textarea textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #F95959;
+}
+
+.fw_form_fw_form .wrap-forms label {
+    /*display: none;*/
+    font-weight: 400;
+}
+
+.form-alert {
+    display: none;
 }
