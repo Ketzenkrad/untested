@@ -28,7 +28,20 @@
             success: function(responce) {
                 formAlert.fadeIn(300, function() {
                     console.log(responce);
+                    if (responce.success) {
+                        formAlert.addClass('alert-success').text(responce.data.flash_messages.success.fw_ext_contact_form_process);
+                        $this[0].reset();
+                    } else {
+                        formAlert.addClass('alert-danger');
+                        var errors = '';
+                        for (var key in responce.data.errors) {
+                            errors += responce.data.errors[key] + '<br>';
+                        }
+                        formAlert.html(errors);
+                    }
                 });
+                $('.loader').remove();
+                btn.attr('disabled', false);
             },
             error: function() {
                 alert('Error!');
