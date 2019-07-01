@@ -3,6 +3,14 @@
 }
 
 $options = array(
+	'span_wrapper'       => array(
+		'type' => 'checkbox',
+		'label' => __( 'Span Wrapper', 'fw' )
+	),
+	'span_wrapper_class'       => array(
+		'type' => 'text',
+		'label' => __( 'Span Wrapper Class', 'fw' )
+	),
 	'span_icon'       => array(
 		'type' => 'icon',
 		'label' => __( 'Span Icon', 'fw' )
