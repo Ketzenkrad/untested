@@ -3,15 +3,14 @@
 }
 
 $options = array(
-    // custom
     'col_class' => array(
-        'label' => __('Column Class', 'clean'),
-		'type'  => 'text',
-		'desc' => __('Column Class', 'clean'),
-	),
-	'col_id' => array(
-    	'label' => __('Column ID', 'fw'),
-		'type'  => 'text',
-		'desc' => __('Column ID', 'fw'),
-	),
+        'type'  => 'text',
+        'label' => __('Column Class', 'fw'),
+        'desc' => __('Column Class', 'fw'),
+    ),
+    'col_id' => array(
+        'type'  => 'text',
+        'label' => __('Column ID', 'fw'),
+        'desc' => __('Column ID', 'fw'),
+    ),
 );

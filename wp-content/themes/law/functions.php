@@ -108,13 +108,13 @@ add_action( 'after_setup_theme', 'law_content_width', 0 );
  */
 function law_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'law' ),
-		'id'            => 'sidebar-1',
+		'name'          => esc_html__( 'Footer', 'law' ),
+		'id'            => 'footer',
 		'description'   => esc_html__( 'Add widgets here.', 'law' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s col-md-3">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'law_widgets_init' );
@@ -153,8 +153,8 @@ function law_scripts() {
 	wp_enqueue_script( 'law-jquery-magnific-popup-js', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', array(), '', true );
 	wp_enqueue_script( 'law-magnific-popup-options-js', get_template_directory_uri() . '/assets/js/magnific-popup-options.js', array(), '', true );
 	wp_enqueue_script( 'law-main-js', get_template_directory_uri() . '/assets/js/main.js', array(), '', true );
-
 	wp_localize_script('law-main-js', 'lawData', array('themePath' => get_template_directory_uri()));
+
 }
 add_action( 'wp_enqueue_scripts', 'law_scripts' );
 
