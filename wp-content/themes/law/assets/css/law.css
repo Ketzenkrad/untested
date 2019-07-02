@@ -1,17 +1,18 @@
-#home-slider>.fw-container-fluid {
-    padding: 0;
-}
-
+#home-slider>.fw-container-fluid,
 #fh5co-content>.fw-container-fluid {
-    padding: 0;
-}
-
-#fh5co-consult>.fw-container-fluid {
     padding: 0;
 }
 
 #fh5co-content .choose {
     padding: 15px 40px 0;
+}
+
+#fh5co-content .fh5co-heading {
+    margin-bottom: 0;
+}
+
+.fh5co-heading h2 {
+    margin-bottom: 15px;
 }
 
 .fh5co-heading span {
@@ -22,20 +23,13 @@
     letter-spacing: 0;
 }
 
-#fh5co-content .fh5co-heading {
-    margin-bottom: 0;
-}
-
-.fh5co-heading h3 {
-    margin-bottom: 15px;
-}
-
 .progress {
     margin-bottom: 15px;
 }
 
 #fh5co-practice .fh5co-heading,
-#fh5co-blog .fh5co-heading {
+#fh5co-blog .fh5co-heading,
+#fh5co-about .fh5co-heading {
     padding: 0 16%;
 }
 
@@ -130,5 +124,17 @@
 }
 
 a.btn.btn-primary:visited {
-    color: #fff;
+    color: #ffffff;
+}
+
+.fw-team .fw-team-inner .fw-team-name>span {
+    font-size: 16px;
+}
+
+#fh5co-about .fw-icon {
+    padding: 0 10px;
+}
+
+#fh5co-about .fw-icon i {
+    font-size: 20px;
 }
